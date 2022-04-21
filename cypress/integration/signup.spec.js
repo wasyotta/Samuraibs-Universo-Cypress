@@ -115,7 +115,7 @@ describe('Cadastro', function () {
       signupPage.submit()
     })
     alertMessages.forEach(function (alert) {
-      it('Deve exibir', + alert.toLowerCase(), function () {
+      it('Deve exibir ' + alert.toLowerCase(), function () {
         signupPage.alertHaveText(alert)
       })
     })
